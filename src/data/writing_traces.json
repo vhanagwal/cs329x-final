@@ -1,0 +1,220 @@
+[
+  {
+    "id": "trace-linear-chi",
+    "task": "Draft CHI paper introduction",
+    "personaHint": "LinearWriter",
+    "intent": "write",
+    "source": "ScholaWrite-inspired synthetic trace",
+    "events": [
+      { "t": 0, "action": "open-editor", "component": "widget-editor" },
+      {
+        "t": 5,
+        "action": "outline-add",
+        "detail": "Problem Statement",
+        "component": "widget-outline"
+      },
+      {
+        "t": 12,
+        "action": "outline-add",
+        "detail": "Research Gap",
+        "component": "widget-outline"
+      },
+      {
+        "t": 20,
+        "action": "editor-typing",
+        "detail": "First paragraph draft",
+        "component": "widget-editor"
+      },
+      {
+        "t": 45,
+        "action": "outline-navigate",
+        "detail": "Jump to Research Gap",
+        "component": "widget-outline"
+      },
+      {
+        "t": 50,
+        "action": "editor-typing",
+        "detail": "Expand research gap section",
+        "component": "widget-editor"
+      },
+      {
+        "t": 75,
+        "action": "chat-ask",
+        "detail": "Clarity check on intro paragraph",
+        "component": "widget-chat"
+      },
+      {
+        "t": 90,
+        "action": "editor-revise",
+        "detail": "Incorporate AI suggestion",
+        "component": "widget-editor"
+      }
+    ],
+    "patterns": ["outline-first", "linear-progression", "ai-assisted-revision"],
+    "cognitiveInsight": "Linear writers benefit from outline scaffolding before prose generation"
+  },
+  {
+    "id": "trace-visual-brainstorm",
+    "task": "Brainstorm related work themes",
+    "personaHint": "VisualWriter",
+    "intent": "brainstorm",
+    "source": "ScholaWrite-inspired synthetic trace",
+    "events": [
+      { "t": 0, "action": "open-mindmap", "component": "widget-mindmap" },
+      {
+        "t": 4,
+        "action": "mindmap-add-node",
+        "detail": "RAG",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 8,
+        "action": "mindmap-add-node",
+        "detail": "Cognitive load",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 12,
+        "action": "mindmap-connect",
+        "detail": "RAG -> Cognitive load",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 18,
+        "action": "kanban-add-card",
+        "detail": "Move RAG to 'To Research'",
+        "component": "widget-kanban"
+      },
+      {
+        "t": 25,
+        "action": "mindmap-add-node",
+        "detail": "User modeling",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 32,
+        "action": "chat-ask",
+        "detail": "What themes am I missing?",
+        "component": "widget-chat"
+      },
+      {
+        "t": 45,
+        "action": "mindmap-add-node",
+        "detail": "Adaptive interfaces",
+        "component": "widget-mindmap"
+      }
+    ],
+    "patterns": [
+      "divergent-first",
+      "spatial-clustering",
+      "ai-augmented-ideation"
+    ],
+    "cognitiveInsight": "Visual writers benefit from spatial externalization before linearization"
+  },
+  {
+    "id": "trace-linear-review",
+    "task": "Review and revise methodology section",
+    "personaHint": "LinearWriter",
+    "intent": "review",
+    "source": "ScholaWrite-inspired synthetic trace",
+    "events": [
+      { "t": 0, "action": "open-editor", "component": "widget-editor" },
+      {
+        "t": 5,
+        "action": "timeline-view",
+        "detail": "Check last 3 revisions",
+        "component": "widget-timeline"
+      },
+      {
+        "t": 15,
+        "action": "editor-select",
+        "detail": "Highlight unclear passage",
+        "component": "widget-editor"
+      },
+      {
+        "t": 20,
+        "action": "chat-ask",
+        "detail": "Suggest clearer phrasing",
+        "component": "widget-chat"
+      },
+      {
+        "t": 35,
+        "action": "editor-revise",
+        "detail": "Apply AI suggestion",
+        "component": "widget-editor"
+      },
+      {
+        "t": 45,
+        "action": "stats-check",
+        "detail": "Word count: 1,247",
+        "component": "widget-stats"
+      },
+      {
+        "t": 50,
+        "action": "outline-navigate",
+        "detail": "Move to next section",
+        "component": "widget-outline"
+      }
+    ],
+    "patterns": [
+      "revision-focused",
+      "ai-assisted-clarity",
+      "progress-monitoring"
+    ],
+    "cognitiveInsight": "Review tasks benefit from timeline awareness and progress metrics"
+  },
+  {
+    "id": "trace-visual-research",
+    "task": "Synthesize sources for literature review",
+    "personaHint": "VisualWriter",
+    "intent": "research",
+    "source": "ScholaWrite-inspired synthetic trace",
+    "events": [
+      { "t": 0, "action": "open-research", "component": "widget-research" },
+      {
+        "t": 10,
+        "action": "research-add-source",
+        "detail": "Chen et al. 2025",
+        "component": "widget-research"
+      },
+      {
+        "t": 20,
+        "action": "research-add-source",
+        "detail": "Lewis et al. 2020",
+        "component": "widget-research"
+      },
+      {
+        "t": 30,
+        "action": "mindmap-add-node",
+        "detail": "Generative UI",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 35,
+        "action": "mindmap-link-source",
+        "detail": "Link Chen to Generative UI",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 45,
+        "action": "mindmap-add-node",
+        "detail": "RAG Architecture",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 50,
+        "action": "mindmap-link-source",
+        "detail": "Link Lewis to RAG",
+        "component": "widget-mindmap"
+      },
+      {
+        "t": 60,
+        "action": "chat-ask",
+        "detail": "What connects these papers?",
+        "component": "widget-chat"
+      }
+    ],
+    "patterns": ["source-first", "thematic-clustering", "ai-synthesis"],
+    "cognitiveInsight": "Research tasks benefit from explicit source tracking linked to thematic organization"
+  }
+]

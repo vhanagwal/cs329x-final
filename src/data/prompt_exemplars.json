@@ -1,0 +1,94 @@
+[
+  {
+    "id": "brainstorm-thesis",
+    "task": "Help me brainstorm a thesis about AI and cognition",
+    "intent": "brainstorm",
+    "personaHint": "VisualWriter",
+    "layoutHint": "mindmap + kanban + chat",
+    "expectedComponents": ["widget-mindmap", "widget-kanban", "widget-chat"],
+    "rationale": "Brainstorming requires divergent thinking; mind maps externalize idea connections while kanban tracks concept clusters."
+  },
+  {
+    "id": "outline-chi-paper",
+    "task": "Draft an outline for a CHI paper on human-AI interaction",
+    "intent": "write",
+    "personaHint": "LinearWriter",
+    "layoutHint": "outline + editor + chat + stats",
+    "expectedComponents": [
+      "widget-outline",
+      "widget-editor",
+      "widget-chat",
+      "widget-stats"
+    ],
+    "rationale": "Academic writing benefits from hierarchical structure; outline provides scaffolding while stats track progress."
+  },
+  {
+    "id": "revise-intro",
+    "task": "Revise the introduction section for clarity and brevity",
+    "intent": "review",
+    "personaHint": "LinearWriter",
+    "layoutHint": "editor + outline + chat + timeline",
+    "expectedComponents": [
+      "widget-editor",
+      "widget-outline",
+      "widget-chat",
+      "widget-timeline"
+    ],
+    "rationale": "Revision requires focused editing with revision history; timeline shows changes over time."
+  },
+  {
+    "id": "literature-review",
+    "task": "Summarize related work on retrieval-augmented generation",
+    "intent": "research",
+    "personaHint": "VisualWriter",
+    "layoutHint": "research + mindmap + chat",
+    "expectedComponents": ["widget-research", "widget-mindmap", "widget-chat"],
+    "rationale": "Research synthesis benefits from source tracking and thematic clustering in visual format."
+  },
+  {
+    "id": "grant-proposal",
+    "task": "Write a grant proposal for a climate research study",
+    "intent": "write",
+    "personaHint": "LinearWriter",
+    "layoutHint": "outline + editor + stats + chat",
+    "expectedComponents": [
+      "widget-outline",
+      "widget-editor",
+      "widget-stats",
+      "widget-chat"
+    ],
+    "rationale": "Grant writing requires structured sections; stats help track word counts and completion."
+  },
+  {
+    "id": "design-ideation",
+    "task": "Brainstorm UI concepts for a mobile health app",
+    "intent": "brainstorm",
+    "personaHint": "VisualWriter",
+    "layoutHint": "mindmap + kanban + chat",
+    "expectedComponents": ["widget-mindmap", "widget-kanban", "widget-chat"],
+    "rationale": "Design ideation requires visual exploration; kanban organizes concepts by development stage."
+  },
+  {
+    "id": "thesis-chapter",
+    "task": "Draft chapter 3 of my dissertation on neural networks",
+    "intent": "write",
+    "personaHint": "LinearWriter",
+    "layoutHint": "outline + editor + research + chat",
+    "expectedComponents": [
+      "widget-outline",
+      "widget-editor",
+      "widget-research",
+      "widget-chat"
+    ],
+    "rationale": "Long-form academic writing needs structure, citation tracking, and AI assistance."
+  },
+  {
+    "id": "meeting-notes",
+    "task": "Organize notes from today's research meeting",
+    "intent": "review",
+    "personaHint": "VisualWriter",
+    "layoutHint": "kanban + mindmap + editor",
+    "expectedComponents": ["widget-kanban", "widget-mindmap", "widget-editor"],
+    "rationale": "Meeting notes benefit from categorization (kanban) and connection mapping (mindmap)."
+  }
+]

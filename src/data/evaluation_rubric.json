@@ -1,0 +1,106 @@
+{
+  "name": "GenUI 5-Factor Evaluation Rubric",
+  "version": "1.0",
+  "sources": [
+    "NASA-TLX (Hart & Staveland, 1988)",
+    "Nielsen's Usability Heuristics (Nielsen, 2012)",
+    "System Usability Scale (Brooke, 1996)",
+    "Aesthetic-Usability Theory (Hartmann et al., 2008)"
+  ],
+  "factors": {
+    "cognitiveLoad": {
+      "description": "Mental effort required to use the interface",
+      "source": "NASA-TLX",
+      "scoring": "0-100, LOWER is better",
+      "subCriteria": {
+        "mentalDemand": "How much thinking, deciding, calculating required?",
+        "temporalDemand": "How much time pressure? Is pacing appropriate?",
+        "effort": "How hard to accomplish the task with this layout?"
+      },
+      "anchors": {
+        "0-20": "Minimal cognitive effort; intuitive and automatic",
+        "21-40": "Low effort; straightforward with minor thinking",
+        "41-60": "Moderate effort; requires attention but manageable",
+        "61-80": "High effort; requires significant concentration",
+        "81-100": "Overwhelming; confusing or disorienting"
+      }
+    },
+    "clarity": {
+      "description": "How clear and understandable the interface is",
+      "source": "Nielsen Heuristics (Visibility, Recognition)",
+      "scoring": "0-100, higher is better",
+      "subCriteria": {
+        "visibility": "Is system status always visible?",
+        "recognition": "Can user recognize vs. recall elements?",
+        "consistency": "Are patterns consistent throughout?"
+      },
+      "anchors": {
+        "0-20": "Confusing; unclear purpose and state",
+        "21-40": "Somewhat unclear; requires learning",
+        "41-60": "Moderately clear; some ambiguity",
+        "61-80": "Clear; easy to understand at a glance",
+        "81-100": "Crystal clear; self-explanatory"
+      }
+    },
+    "efficiency": {
+      "description": "How efficiently users can complete tasks",
+      "source": "Nielsen Heuristics (Efficiency, Flexibility)",
+      "scoring": "0-100, higher is better",
+      "subCriteria": {
+        "taskCompletion": "Minimum steps to complete primary task",
+        "flexibility": "Supports shortcuts and customization",
+        "errorPrevention": "Design prevents user errors"
+      },
+      "anchors": {
+        "0-20": "Highly inefficient; many unnecessary steps",
+        "21-40": "Inefficient; cumbersome workflows",
+        "41-60": "Adequate efficiency; room for improvement",
+        "61-80": "Efficient; streamlined workflows",
+        "81-100": "Highly efficient; optimized for speed"
+      }
+    },
+    "personalizationFit": {
+      "description": "How well the UI matches user's cognitive style",
+      "source": "User Modeling (Fischer, 2001; Woolf, 2009)",
+      "scoring": "0-100, higher is better",
+      "subCriteria": {
+        "personaAlignment": "Matches visual vs. linear cognitive preference",
+        "preferenceMatch": "Honors stated density/display preferences",
+        "historyUtilization": "Leverages known interaction patterns"
+      },
+      "anchors": {
+        "0-20": "Complete mismatch with user style",
+        "21-40": "Poor fit; mostly ignores preferences",
+        "41-60": "Partial fit; some alignment",
+        "61-80": "Good fit; mostly personalized",
+        "81-100": "Excellent fit; deeply personalized"
+      }
+    },
+    "aestheticAppeal": {
+      "description": "Visual design quality and appeal",
+      "source": "Hartmann et al. (2008), WCAG 2.2",
+      "scoring": "0-100, higher is better",
+      "subCriteria": {
+        "visualBalance": "Proportional layout distribution",
+        "whitespace": "Appropriate breathing room",
+        "coherence": "Unified visual language"
+      },
+      "anchors": {
+        "0-20": "Ugly or jarring; poor visual design",
+        "21-40": "Unappealing; cluttered or unbalanced",
+        "41-60": "Acceptable; basic visual treatment",
+        "61-80": "Attractive; polished appearance",
+        "81-100": "Beautiful; delightful visual design"
+      }
+    }
+  },
+  "weightedScoring": {
+    "cognitiveLoad": 0.25,
+    "clarity": 0.20,
+    "efficiency": 0.20,
+    "personalizationFit": 0.20,
+    "aestheticAppeal": 0.15
+  }
+}
+
+

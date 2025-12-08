@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p-visualwriter",
+    "name": "VisualWriter",
+    "cognitiveStyle": "Prefers spatial organization, visual grouping, and non-linear exploration",
+    "description": "Users who think in images and spatial relationships; benefit from mind maps, diagrams, and kanban boards",
+    "preferences": {
+      "density": "comfortable",
+      "showMinimap": true,
+      "layoutStyle": "multi-panel",
+      "primaryTools": ["mindmap", "kanban"]
+    },
+    "historySnippets": [
+      "Frequently branches ideas before drafting",
+      "Uses kanban to track subtopics and progress",
+      "Prefers visual connections between concepts",
+      "Often starts with divergent exploration before convergent writing"
+    ],
+    "typicalWorkflows": [
+      "brainstorm → cluster → outline → draft",
+      "mindmap first, linear writing second"
+    ],
+    "cognitiveTraits": {
+      "workingMemorySupport": "spatial externalization",
+      "preferredExternalization": "visual diagrams",
+      "taskSwitchingCost": "low when spatial context preserved"
+    },
+    "source": "Synthetic profile based on cognitive style literature (Riding & Cheema, 1991)"
+  },
+  {
+    "id": "p-linearwriter",
+    "name": "LinearWriter",
+    "cognitiveStyle": "Prefers hierarchical outlines, sequential drafting, and structured progression",
+    "description": "Users who think in sequences and hierarchies; benefit from outlines, checklists, and focused editors",
+    "preferences": {
+      "density": "compact",
+      "showMinimap": false,
+      "layoutStyle": "focused",
+      "primaryTools": ["outline", "editor"]
+    },
+    "historySnippets": [
+      "Starts with outlines and moves linearly through sections",
+      "Requests clarity checks mid-draft",
+      "Prefers focused editing without distractions",
+      "Uses stats to track progress toward goals"
+    ],
+    "typicalWorkflows": [
+      "outline → draft → revise → polish",
+      "section-by-section progression"
+    ],
+    "cognitiveTraits": {
+      "workingMemorySupport": "hierarchical structure",
+      "preferredExternalization": "text outlines",
+      "taskSwitchingCost": "high; prefers deep focus"
+    },
+    "source": "Synthetic profile based on cognitive style literature (Riding & Cheema, 1991)"
+  },
+  {
+    "id": "p-researcher",
+    "name": "ResearchWriter",
+    "cognitiveStyle": "Hybrid style emphasizing source management and synthesis",
+    "description": "Users focused on academic research who need both source tracking and thematic organization",
+    "preferences": {
+      "density": "comfortable",
+      "showMinimap": true,
+      "layoutStyle": "multi-panel",
+      "primaryTools": ["research", "mindmap", "editor"]
+    },
+    "historySnippets": [
+      "Heavily relies on citation management",
+      "Cross-references sources frequently",
+      "Builds thematic clusters before writing",
+      "Uses AI to identify gaps in literature"
+    ],
+    "typicalWorkflows": [
+      "collect sources → cluster themes → synthesize → write",
+      "iterative source-to-insight cycles"
+    ],
+    "cognitiveTraits": {
+      "workingMemorySupport": "external source tracking",
+      "preferredExternalization": "linked notes and citations",
+      "taskSwitchingCost": "medium; context-dependent"
+    },
+    "source": "Synthetic profile based on academic writing research (Wang et al., 2025 ScholaWrite)"
+  }
+]

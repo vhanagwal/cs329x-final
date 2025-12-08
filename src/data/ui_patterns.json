@@ -1,0 +1,111 @@
+[
+  {
+    "id": "pattern-sidebar-editor",
+    "name": "Sidebar Navigation + Editor",
+    "description": "Sidebar navigation plus main editor pane, common in document apps",
+    "inspiration": "RICO dataset - document editing apps (Google Docs, Notion)",
+    "personaFit": ["LinearWriter"],
+    "intentFit": ["write", "review"],
+    "components": [
+      "layout-row",
+      "widget-outline",
+      "widget-editor",
+      "widget-chat"
+    ],
+    "layoutRatio": "1:3:1",
+    "cognitiveRationale": "Reduces navigation overhead; outline externalizes document structure"
+  },
+  {
+    "id": "pattern-mindmap-kanban",
+    "name": "Visual Ideation Split",
+    "description": "Split mind map and kanban board with chat assistant",
+    "inspiration": "RICO dataset - creativity/brainstorm apps (Miro, FigJam)",
+    "personaFit": ["VisualWriter"],
+    "intentFit": ["brainstorm"],
+    "components": [
+      "layout-row",
+      "widget-mindmap",
+      "widget-kanban",
+      "widget-chat"
+    ],
+    "layoutRatio": "2:2:1",
+    "cognitiveRationale": "Supports divergent thinking; spatial layout matches visual cognitive style"
+  },
+  {
+    "id": "pattern-editor-stats",
+    "name": "Focused Writing + Metrics",
+    "description": "Editor with adjacent stats/insights panel for progress tracking",
+    "inspiration": "RICO dataset - writing tools (iA Writer, Hemingway)",
+    "personaFit": ["LinearWriter"],
+    "intentFit": ["write"],
+    "components": [
+      "layout-row",
+      "widget-editor",
+      "widget-stats",
+      "widget-chat"
+    ],
+    "layoutRatio": "3:1:1",
+    "cognitiveRationale": "Focus mode with peripheral awareness of progress metrics"
+  },
+  {
+    "id": "pattern-research-synthesis",
+    "name": "Research + Synthesis",
+    "description": "Source panel, mind map for themes, and notes editor",
+    "inspiration": "RICO dataset - research tools (Zotero, Roam)",
+    "personaFit": ["VisualWriter", "LinearWriter"],
+    "intentFit": ["research"],
+    "components": [
+      "layout-row",
+      "widget-research",
+      "widget-mindmap",
+      "widget-editor"
+    ],
+    "layoutRatio": "1:2:2",
+    "cognitiveRationale": "Externalizes source tracking; mind map clusters themes"
+  },
+  {
+    "id": "pattern-review-timeline",
+    "name": "Review + Timeline",
+    "description": "Editor with revision timeline and AI review assistant",
+    "inspiration": "RICO dataset - editing tools (Word Track Changes, Git diff)",
+    "personaFit": ["LinearWriter"],
+    "intentFit": ["review"],
+    "components": [
+      "layout-row",
+      "widget-editor",
+      "widget-timeline",
+      "widget-chat"
+    ],
+    "layoutRatio": "2:1:1",
+    "cognitiveRationale": "Timeline externalizes revision history; reduces memory load"
+  },
+  {
+    "id": "pattern-full-ideation",
+    "name": "Full Ideation Workspace",
+    "description": "Mind map, kanban, research panel, and chat for deep brainstorming",
+    "inspiration": "RICO dataset - professional creative suites",
+    "personaFit": ["VisualWriter"],
+    "intentFit": ["brainstorm", "research"],
+    "components": [
+      "layout-col",
+      "layout-row",
+      "widget-mindmap",
+      "widget-kanban",
+      "widget-research",
+      "widget-chat"
+    ],
+    "layoutRatio": "complex",
+    "cognitiveRationale": "Maximum cognitive offloading for complex ideation tasks"
+  },
+  {
+    "id": "pattern-compact-write",
+    "name": "Compact Writing Focus",
+    "description": "Minimal distraction writing with hidden panels",
+    "inspiration": "RICO dataset - distraction-free writing (iA Writer)",
+    "personaFit": ["LinearWriter"],
+    "intentFit": ["write"],
+    "components": ["layout-col", "widget-editor", "widget-chat"],
+    "layoutRatio": "4:1",
+    "cognitiveRationale": "Eliminates visual clutter; maximizes focus on content creation"
+  }
+]
