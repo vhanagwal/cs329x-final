@@ -19,13 +19,18 @@
     "zod": "^4.1.13"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^24.32.1",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
