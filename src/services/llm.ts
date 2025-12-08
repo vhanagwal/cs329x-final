@@ -18,6 +18,7 @@ import rubric from '@/data/evaluation_rubric.json';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
+  baseURL: 'https://api.openai.com/v1', // Bypass Netlify AI Gateway
 });
 
 // ============================================
@@ -306,8 +307,11 @@ Return ONLY valid JSON, no markdown fencing.
     return validated;
 
   } catch (error) {
-    console.error("Error generating interface:", error);
-    return FALLBACK_LAYOUTS[condition];
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error("Error generating interface:", errorMessage, error);
+    const fallback = FALLBACK_LAYOUTS[condition];
+    fallback.rationale = `Fallback layout used: ${errorMessage.includes('API key') ? 'OpenAI API key not configured' : 'generation error'}. ${fallback.rationale}`;
+    return fallback;
   }
 }
 
@@ -455,7 +459,8 @@ Use the FULL scoring range. A chat-only baseline should score LOW on personaliza
     return JSON.parse(content) as EvaluationSummary;
 
   } catch (error) {
-    console.error("Error evaluating interface:", error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error("Error evaluating interface:", errorMessage, error);
     return {
       cognitiveLoad: 50,
       clarity: 50,
@@ -463,7 +468,7 @@ Use the FULL scoring range. A chat-only baseline should score LOW on personaliza
       personalizationFit: 50,
       aestheticAppeal: 50,
       overallScore: 50,
-      feedback: "Evaluation unavailable due to service error."
+      feedback: `Evaluation unavailable: ${errorMessage.includes('API key') ? 'API key not configured' : 'service error'}`
     };
   }
 }
